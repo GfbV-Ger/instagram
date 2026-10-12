@@ -1,0 +1,60 @@
+# Holt alle zwei Stunden neue Instagram-Beiträge und veröffentlicht die Seite.
+# Läuft außerdem, wenn jemand eine Datei im Projekt ändert (z. B. eine Korrektur),
+# und lässt sich unter „Actions“ → „Beiträge aktualisieren“ → „Run workflow“ von Hand starten.
+name: Beiträge aktualisieren
+
+on:
+  schedule:
+    - cron: "17 */2 * * *"
+  workflow_dispatch:
+  push:
+    branches: [main]
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: beitraege-aktualisieren
+  cancel-in-progress: false
+
+jobs:
+  aktualisieren:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.veroeffentlichen.outputs.page_url }}
+    steps:
+      - name: Projekt holen
+        uses: actions/checkout@v4
+
+      - name: Neue Instagram-Beiträge abrufen
+        env:
+          IG_TOKEN: ${{ secrets.IG_TOKEN }}
+          IG_USER_ID: ${{ secrets.IG_USER_ID }}
+        run: python3 skript/aktualisieren.py
+
+      - name: Änderungen speichern
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A site
+          if git diff --cached --quiet; then
+            echo "Keine neuen Beiträge."
+          else
+            git commit -m "Beiträge aktualisiert"
+            git push
+          fi
+
+      - name: Seite vorbereiten
+        uses: actions/configure-pages@v5
+
+      - name: Seite hochladen
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: site
+
+      - name: Seite veröffentlichen
+        id: veroeffentlichen
+        uses: actions/deploy-pages@v4

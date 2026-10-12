@@ -1,0 +1,8 @@
+{
+  "_hinweis": "Grundeinstellungen der Link-Seite.",
+  "anzahl_auf_der_seite": 24,
+  "abruf_anzahl": 30,
+  "titel_max_zeichen": 70,
+  "ersatz_link": "https://www.gfbv.de/aktuelles/news/",
+  "api_version": "v23.0"
+}

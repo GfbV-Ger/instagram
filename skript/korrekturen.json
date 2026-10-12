@@ -1,0 +1,53 @@
+{
+  "_hinweis": "Korrekturen je Instagram-Beitrag. Schlüssel = Kürzel aus der Post-Adresse (instagram.com/p/KÜRZEL/). Mögliche Felder: titel, ziel, art, ausblenden (true). Was hier steht, gewinnt immer gegenüber der Automatik.",
+  "DeRPpLdDe6O": {
+    "titel": "Nordsyrien: Vertriebene können nicht zurück",
+    "ziel": "https://www.gfbv.de/aktuelles/news/sieben-jahre-nach-dem-tuerkischen-angriff-auf-nordsyrien-vertriebene-kurden-koennen-weiterhin-nicht-in-ihre-heimat-zurueckkehren/",
+    "art": "Artikel"
+  },
+  "DeOrUCsCMRK": {
+    "titel": "Maasai in Tansania: willkürliche Verhaftungen",
+    "ziel": "https://www.gfbv.de/aktuelles/news/maasai-in-tansania-gfbv-und-fian-verurteilen-willkuerliche-verhaftungen-scharf/",
+    "art": "Artikel"
+  },
+  "DeM2Jb9iPDB": {
+    "titel": "Neue Ausgabe „Für Vielfalt“: Ernährung",
+    "ziel": "https://www.gfbv.de/aktuelles/zeitschrift/352-ernaehrung-lebensgrundlage-kulturgut-kriegswaffe/",
+    "art": "Zeitschrift"
+  },
+  "DeG7xI3CF6-": {
+    "titel": "Wahlen in Bosnien und Herzegowina",
+    "ziel": "https://www.gfbv.de/aktuelles/news/wahlen-in-bosnien-und-herzegowina-gfbv-warnt-vor-weiterer-ethnonationaler-polarisierung/",
+    "art": "Artikel"
+  },
+  "Dd8n7QoCOIu": {
+    "titel": "Wir suchen: Referent*in Genozidprävention",
+    "ziel": "https://www.gfbv.de/mitmachen/aktuelle-stellenausschreibungen/",
+    "art": "Stelle"
+  },
+  "Dd6EmKdjNcM": {
+    "titel": "Brasilien: 191 indigene Kandidaturen",
+    "ziel": "https://www.gfbv.de/region/brasilien/",
+    "art": "Region"
+  },
+  "Dd4I6KVjUf7": {
+    "titel": "Syrien ist für Minderheiten weiterhin nicht sicher",
+    "ziel": "https://www.gfbv.de/aktuelles/news/syrien-ist-fuer-minderheiten-weiterhin-nicht-sicher-wunschdenken-darf-keine-grundlage-fuer-asylentscheidungen-sein/",
+    "art": "Artikel"
+  },
+  "Dd1q-nNgZ99": {
+    "titel": "Ostpreußens Wolfskinder: Zeitzeugin Ursula Dorn",
+    "ziel": "https://www.gfbv.de/publikation/ostpreussens-wolfskinder/",
+    "art": "Publikation"
+  },
+  "DdrKP14CDtj": {
+    "titel": "Afrîn: Vertriebene fordern ihr Eigentum zurück",
+    "ziel": "https://www.gfbv.de/aktuelles/news/nordsyrien-vertriebene-kurden-fordern-ihr-eigentum-zurueck/",
+    "art": "Artikel"
+  },
+  "DdosLYVDSZf": {
+    "titel": "Tote Löwen im Maasai-Gebiet: Untersuchung gefordert",
+    "ziel": "https://www.gfbv.de/aktuelles/news/konflikt-um-tote-loewen-in-maasai-gebiet-in-tansania-menschenrechtsorganisationen-fordern-unabhaengige-untersuchung/",
+    "art": "Artikel"
+  }
+}
